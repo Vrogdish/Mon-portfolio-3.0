@@ -1,0 +1,27 @@
+@import "/src/styles/variables.scss";
+
+.burger {
+  &-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 50px;
+
+    & div {
+      width: 30px;
+      height: 2px;
+      background-color: $color-dark;
+    }
+  }
+  & .dark {
+    & div {
+        background-color: $color-light;
+    }
+  }
+  &-nav{
+    background-color: $color-dark;
+    position: absolute;
+    left: 0;
+    top : 40px;
+  }
+}

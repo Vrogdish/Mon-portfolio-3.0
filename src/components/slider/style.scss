@@ -39,3 +39,24 @@
     opacity: 1;
 }
 
+@media (max-width:768px) {
+  .slider {
+    width: 300px;
+  }
+
+  .slider .capture {
+    width: 300px;
+    height: 400px;
+  }
+}
+
+
+@media (max-width:1200px) {
+  .project-preview {
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    margin: auto;
+  }
+}
+

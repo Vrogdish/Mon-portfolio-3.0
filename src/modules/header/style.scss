@@ -17,8 +17,21 @@ header {
     opacity: 90%;
 }
 
+.mobile-nav {
+    display: none;
+}
+
 @media (max-width : 768px) {
     .desktop-nav {
         display: none;
+    }
+    .mobile-nav{
+        display: block;
+    }
+    header {
+        justify-content: flex-start;
+        background-color: $color-dark;
+        opacity: 90%;
+        height: 50px;
     }
 }

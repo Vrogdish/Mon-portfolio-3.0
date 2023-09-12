@@ -2,6 +2,10 @@
 
 form {
     margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px;
 .form-input {
     display: flex;
     flex-direction: column;
@@ -10,6 +14,7 @@ form {
 }
 input, textarea{
     padding: 5px;
+    width: 100%;
 }
 
 textarea {
@@ -45,4 +50,11 @@ button:hover{
 
 }
 
+}
+
+@media (max-width : 768px) {
+    form {
+        width: 100%;
+    }
+    
 }

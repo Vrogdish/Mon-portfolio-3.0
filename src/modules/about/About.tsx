@@ -18,7 +18,7 @@ export default function About() {
   return (
     <section className="about" id="about">
       <div  className={`separate ${inView? "separate_visible" : null}`} ></div>
-      <Container  className={`${inView?"about_visible":null}`}>
+      <Container  className={`container ${inView?"about_visible":null}`}>
         <div ref={ref} className="description">
           <div className="description-header">
             <div className="picture">
