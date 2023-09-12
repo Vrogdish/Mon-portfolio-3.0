@@ -34,11 +34,14 @@ export default function About() {
             près de 20 ans dans la maintenance et la gestion d&apos;appareils
             automatisés en libre service, j&apos;ai depuis peu decidé de me
             lancer dans la programmation et principalement dans la création et
-            l&apos;integration de site web. D&apos;abord autodidacte pendant
+            l&apos;integration de site web.<br></br> D&apos;abord autodidacte pendant
             quelques années, je me suis ensuite orienté vers une formation
-            OpenClassrooms pour approfondir mes connaissancesJe vous laisse
+            OpenClassrooms pour approfondir mes connaissances. <br></br>Je vous laisse
             découvrir mes compétences et differents projets personnels ainsi que
             quelques uns issus de ma formation.
+          </Typography>
+          <Typography component="p">
+            Cédric.
           </Typography>
         </div>
 

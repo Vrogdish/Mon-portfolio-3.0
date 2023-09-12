@@ -1,7 +1,6 @@
 import { app } from "@/config/firebase";
 import { Project } from "@/types/project";
-// import { FormData } from "@/hooks/form/Form";
-import { addDoc, collection,    getDocs, getFirestore, query,  setDoc,  where } from "firebase/firestore";
+import {  collection, getDocs, getFirestore, query, where } from "firebase/firestore";
 
 const db = getFirestore(app);
 
@@ -53,16 +52,3 @@ export const getProject = async (projectTitle : string) =>{
 
   return projects
   };
-
-
-//   export const PostMessage = async (data : FormData) => { 
-//     const docRef = await addDoc(collection(db, "comments"), {
-//       firstname : data.firstName,
-//       lastname: data.lastName,
-//       email: data.email,
-//       message:data.message
-//     });
-
-//     await setDoc(docRef,data)
-    
-//   }

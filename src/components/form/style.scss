@@ -6,7 +6,16 @@ form {
     display: flex;
     flex-direction: column;
     gap: 5px;
+
 }
+input, textarea{
+    padding: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
 
 .name {
     display: flex;

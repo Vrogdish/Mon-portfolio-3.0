@@ -30,6 +30,9 @@
 
     .description {
       max-width: 600px;
+      .content{
+        margin-bottom: 30px;
+      }
     }
 
     .description-header {
@@ -54,6 +57,7 @@
           width: 100%;
         }
       }
+
     }
     .skills {
       width: 500px;

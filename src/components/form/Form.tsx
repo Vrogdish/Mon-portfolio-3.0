@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 import { ErrorMessage } from "@hookform/error-message";
 import "./style.scss";
 import Typography, { standardFont } from "../typography/Typography";
-// import emailjs from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
 
 export type FormData = {
   firstName: string;
@@ -37,12 +37,12 @@ export default function Form({ className }: Props) {
       email: data.email,
       message: data.message,
     };
-    // emailjs.send(
-    //   "service_sayuynv",
-    //   "contact_form",
-    //   templateParams,
-    //   process.env.NEXT_PUBLIC_PUBLIC_KEY
-    // );
+    emailjs.send(
+      "service_sayuynv",
+      "contact_form",
+      templateParams,
+      process.env.NEXT_PUBLIC_PUBLIC_KEY
+    );
     reset();
     setTimeout(() => {
       setIsLoading(false);

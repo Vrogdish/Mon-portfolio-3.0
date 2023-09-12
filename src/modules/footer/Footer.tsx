@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import "./style.scss";
 import Typography from "@/components/typography/Typography";
@@ -31,7 +32,7 @@ export default function Footer() {
               ma page github ou cliquer directement sur le lien suivant :
             </p>
           </Typography>
-          <Button className="portfolio-btn">
+          <Button className="portfolio-btn" onClick={()=>{window.open("https://github.com/Vrogdish/Mon-portfolio-3.0", "_blank")}}>
             Code source
           </Button>
         </div>
