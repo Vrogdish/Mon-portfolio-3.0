@@ -13,7 +13,7 @@
       position: absolute;
       z-index: 10;
       top: 180px;
-      // animation: title 1s ease-in-out both 2s;
+      animation: title 0.8s ease-in-out both 1s;
 
       .name {
         margin-bottom: 80px;
@@ -32,7 +32,7 @@
       width: 600px;
       border-radius: 100%;
       background-color: $color-secondary;
-      // animation: circle ease-in-out 3s both;
+      animation: circle ease-in-out 2s both;
     }
   }
 }
@@ -57,7 +57,7 @@
     height: 300px;
     background-image: radial-gradient(circle at center right, $color-secondary,$color-dark);
     border-radius: 100%;
-    // animation: cta ease-in-out 5s infinite;
+    animation: cta ease-in-out 4s infinite;
   }
   &-btn {
     position: relative;
