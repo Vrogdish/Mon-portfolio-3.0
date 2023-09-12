@@ -21,3 +21,9 @@
         padding: 100px 30px 200px 30px;
     }
 }
+
+@media (max-width:768px) {
+    .projects .container {
+        padding: 40px 20px 100px 20px;
+    }
+}
