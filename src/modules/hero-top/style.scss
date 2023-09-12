@@ -97,3 +97,14 @@
     transform: rotate(360deg);
   }
 }
+
+@media (max-width : 768px) {
+  .hero .container .circle{
+    width: 400px;
+    height: 400px;
+  }
+
+  .hero .container .title {
+    top : 150px
+  }
+}
