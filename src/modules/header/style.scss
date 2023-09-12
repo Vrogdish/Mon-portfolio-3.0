@@ -1,0 +1,24 @@
+@import "/src/styles/variables.scss";
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 20;
+    transition: all 800ms;
+}
+
+.dark-theme {
+    background-color: $color-dark;
+    opacity: 90%;
+}
+
+@media (max-width : 768px) {
+    .desktop-nav {
+        display: none;
+    }
+}

@@ -1,0 +1,18 @@
+@import "/src/styles/variables.scss";
+
+.my-button{
+    border-radius: 2rem;
+    background-color: $color-dark;
+    width: 250px;
+    padding: 14px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.my-button:hover {
+    background-color: lighten($color: $color-dark, $amount: 10);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}

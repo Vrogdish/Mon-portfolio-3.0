@@ -1,0 +1,97 @@
+@import "/src/styles/variables.scss";
+
+.hero {
+  background-color: $color-light;
+
+  .container {
+    position: relative;
+    height: 100vh;
+
+    .title {
+      position: absolute;
+      z-index: 10;
+      top: 180px;
+      animation: title 1s ease-in-out both 2s;
+
+      .name {
+        margin-bottom: 80px;
+      }
+
+      .job {
+        margin-bottom: 120px;
+      }
+    }
+
+    .circle {
+      position: absolute;
+      top: 200px;
+      right: 40px;
+      height: 600px;
+      width: 600px;
+      border-radius: 100%;
+      background-color: $color-secondary;
+      animation: circle ease-in-out 3s both;
+    }
+  }
+}
+
+.cta{
+  position: relative;
+
+  &-border{
+    width: 300px;
+    padding: 4px;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+
+  }
+  &-effect {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-image: radial-gradient(circle at center right, $color-secondary,$color-dark);
+    border-radius: 100%;
+    animation: cta ease-in-out 5s infinite;
+  }
+  &-btn {
+    position: relative;
+    width: 100% !important;
+  }
+}
+
+
+@keyframes circle {
+  from {
+    transform: translate(-400px) scale(0);
+  }
+
+  50% {
+    transform: translate(-400px) scale(1);
+  }
+
+  to {
+    transform: translate(0) scale(1);
+  }
+}
+
+@keyframes title {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes cta {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

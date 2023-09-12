@@ -1,0 +1,30 @@
+@import "/src/styles/variables.scss";
+
+footer {
+  background-color: $color-dark;
+  padding: 50px 0;
+  .contact {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .title {
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  .portfolio {
+    width: 600px;
+    margin: 50px 0;
+    
+  }
+
+  .portfolio-btn {
+    background-color: $color-secondary;
+    margin: 50px auto;
+  }
+
+  .portfolio-btn:hover {
+    background-color: darken($color: $color-secondary, $amount: 10);
+  }
+}

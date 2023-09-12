@@ -1,0 +1,26 @@
+.project-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 600px;
+    margin-top: 50px;
+    .title {
+        margin-bottom: 100px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 400px;
+    }
+
+    .links{
+        display: flex;
+        gap: 50px;
+        
+    }
+    h4 {
+        margin-bottom: 10px;
+    }
+}

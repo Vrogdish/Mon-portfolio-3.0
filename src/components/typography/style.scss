@@ -1,0 +1,39 @@
+@import "/src/styles/variables.scss";
+
+
+.text-xl {
+    font-size: 96px;
+    font-weight: 900;
+    letter-spacing: 35px;
+    line-height: 150px;
+}
+
+.text-lg {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 10px;
+}
+
+.text-md{
+    font-size: 18px;
+}
+
+.text-sm{
+    font-size: 16px;
+}
+
+.text-caption{
+    font-size: 14px;
+}
+
+.light-color {
+    color: $text-light;
+}
+
+.dark-color {
+    color: $text-dark;
+}
+
+.grey-color{
+    color: $text-grey;
+}

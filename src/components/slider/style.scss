@@ -1,0 +1,41 @@
+@import "/src/styles/variables.scss";
+.project-preview {
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
+  transition: all 0.8s;
+}
+.slider {
+  width: 400px;
+  .navigation {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+
+  .capture {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    background-color: $color-secondary;
+  
+  }
+
+  img {
+    object-fit: cover;
+    object-position: top;
+  }
+  .next , .prev {
+    cursor: pointer;
+  }
+
+  .inactive {
+    opacity: 50%;
+    cursor: default;
+  }
+}
+
+.project-visible {
+    opacity: 1;
+}
+
