@@ -22,7 +22,7 @@ export default function About() {
         <div ref={ref} className="description">
           <div className="description-header">
             <div className="picture">
-              <Image src={"/images/profil-square.jpg"} alt="" fill />
+              <Image src={"/images/profil-square.jpg"} alt="profil" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
             </div>
             <Typography variant="md" className="title" component="h2">
               Vous recherchez un développeur web pour votre entreprise ou un
