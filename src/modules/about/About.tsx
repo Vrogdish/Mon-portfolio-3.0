@@ -9,7 +9,7 @@ import { useInView } from "react-intersection-observer";
 
 export default function About() {
   const { ref, inView } = useInView({
-    rootMargin : "-100px",
+    // rootMargin : "-100px",
     triggerOnce : true
   });
 
