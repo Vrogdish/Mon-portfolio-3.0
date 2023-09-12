@@ -70,7 +70,7 @@ export default function Slider({ className, itemList }: Props) {
               {itemList.map((element, index) => (
                 <SwiperSlide key={index}>
                   <div className="capture">
-                    <Image src={element.cover} alt={element.title} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
+                    <Image src={element.cover} alt={element.title} width={400} height={600}/>
                   </div>
                 </SwiperSlide>
               ))}
