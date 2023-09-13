@@ -4,13 +4,13 @@ import Projects from "@/modules/projects/Projects";
 import { Metadata } from "next";
 
 export const metadata : Metadata = {
+  metadataBase: new URL("https://www.cedric-webdevelopment.fr/"),
   title: "Cédric Gache - Développeur front-end",
   description: "Portfolio de Cédric Gache - Développeur front-end à Montpellier",
   openGraph : {
     type: "website",
     title : "Cédric Gache - Développeur front-end",
     description : "Développeur front-end à Montpellier",
-    
   }
 };
 
@@ -25,10 +25,8 @@ const jsonLd = {
     
   },
   email: "mailto:cedricwebdevelopment@gmail.com",
-  
   jobTitle: "Développeur web - Front-end",
   name: "Cédric Gache",
-  
   }
 
 export default function Home() {

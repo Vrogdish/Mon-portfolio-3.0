@@ -33,7 +33,7 @@ export default function SocialNetwork({ className }: Props) {
           <a href={element.url} target="_blank" className="icons" >
             <Image
               src={element.image}
-              alt={element.title}
+              alt={`icone ${element.title}`}
               width={50}
               height={50}
             />
