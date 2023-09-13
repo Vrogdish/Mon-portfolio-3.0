@@ -24,7 +24,7 @@ const jsonLd = {
     postalCode: "34000",
     
   },
-  email: "mailto:gachecedric@gmail.com",
+  email: "mailto:cedricwebdevelopment@gmail.com",
   
   jobTitle: "Développeur web - Front-end",
   name: "Cédric Gache",
