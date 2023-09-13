@@ -12,7 +12,8 @@
     .title {
       position: absolute;
       z-index: 10;
-      top: 180px;
+      // top: 180px;
+      top:20%;
       animation: title 0.8s ease-in-out both 1s;
 
       .name {
@@ -26,7 +27,8 @@
 
     .circle {
       position: absolute;
-      top: 200px;
+      // top: 200px;
+      top:20%;
       right: 40px;
       height: 600px;
       width: 600px;
@@ -102,9 +104,10 @@
   .hero .container .circle{
     width: 400px;
     height: 400px;
+    left: 50%;
   }
 
-  .hero .container .title {
-    top : 150px
-  }
+  // .hero .container .title {
+  //   top : 150px
+  // }
 }
