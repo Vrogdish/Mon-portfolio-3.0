@@ -17,15 +17,18 @@
     position: relative;
     width: 400px;
     height: 600px;
-    background-color: $color-secondary;
-  
+    background-color: white;
+    img {
+      position: absolute;
+      top: 0;
+      object-fit: cover;
+      object-position: top;
+      width: 100%;
+      height: auto;
+    }
   }
-
-  img {
-    object-fit: cover;
-    object-position: top;
-  }
-  .next , .prev {
+  .next,
+  .prev {
     cursor: pointer;
   }
 
@@ -36,26 +39,25 @@
 }
 
 .project-visible {
-    opacity: 1;
+  opacity: 1;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .slider {
     width: 300px;
   }
 
   .slider .capture {
     width: 300px;
-    height: 400px;
+    height: 320px;
   }
 }
 
-
-@media (max-width:1200px) {
+@media (max-width: 1200px) {
   .project-preview {
     flex-direction: column;
     align-items: center;
     margin: auto;
   }
-}
 
+}
