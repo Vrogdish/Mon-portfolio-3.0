@@ -10,10 +10,11 @@
     overflow-x: hidden;
 
     .title {
-      position: absolute;
+      position: relative;
       z-index: 10;
       // top: 180px;
-      top:20%;
+      // top:20%;
+      margin-top: 180px;
       animation: title 0.8s ease-in-out both 1s;
 
       .name {
@@ -107,7 +108,9 @@
     left: 50%;
   }
 
-  // .hero .container .title {
-  //   top : 150px
-  // }
+ .cta {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
 }
