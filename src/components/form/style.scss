@@ -39,14 +39,13 @@ button {
     background-color: $color-secondary;
     font-size: 18px;
     color: $text-light;
-    transition: all ease-in-out 0.8s;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: all ease-in-out 0.3s;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)
 
 }
 
 button:hover{
-    background-color: darken($color: $color-secondary, $amount: 10);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: lighten($color: $color-dark, $amount: 10);
 
 }
 

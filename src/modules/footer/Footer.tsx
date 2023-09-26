@@ -32,7 +32,7 @@ export default function Footer() {
               ma page github ou cliquer directement sur le lien suivant :
             </p>
           </Typography>
-          <Button className="portfolio-btn" onClick={()=>{window.open("https://github.com/Vrogdish/Mon-portfolio-3.0", "_blank")}}>
+          <Button theme="light" className="portfolio-btn" onClick={()=>{window.open("https://github.com/Vrogdish/Mon-portfolio-3.0", "_blank")}}>
             Code source
           </Button>
         </div>

@@ -12,8 +12,6 @@
     .title {
       position: relative;
       z-index: 10;
-      // top: 180px;
-      // top:20%;
       margin-top: 180px;
       animation: title 0.8s ease-in-out both 1.5s;
 
@@ -28,7 +26,6 @@
 
     .circle {
       position: absolute;
-      // top: 200px;
       top:20%;
       right: 40px;
       height: 600px;
@@ -58,7 +55,6 @@
     position: absolute;
     width: 300px;
     height: 300px;
-    // background-image: radial-gradient(circle at center right, $color-secondary,$color-dark);
     background-image: linear-gradient(#6366f1,#e11d48);
     border-radius: 100%;
     animation: cta ease-in-out 4s infinite;

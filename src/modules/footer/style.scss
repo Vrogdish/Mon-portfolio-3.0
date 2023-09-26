@@ -25,9 +25,9 @@ footer {
     margin: 50px auto;
   }
 
-  .portfolio-btn:hover {
-    background-color: darken($color: $color-secondary, $amount: 10);
-  }
+  // .portfolio-btn:hover {
+  //   background-color: darken($color: $color-secondary, $amount: 10);
+  // }
 }
 
 @media (max-width : 1200px) {
