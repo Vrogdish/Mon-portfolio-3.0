@@ -5,6 +5,7 @@ import Typography from "@/components/typography/Typography";
 import Button from "@/components/button/Button";
 import Container from "@/components/container/Container";
 import { scrollToId } from "@/utils/scrollToId";
+import SocialNetwork from "@/components/social-network/SocialNetwork";
 
 export default function HeroTop() {
   const name = "< Cédric Gache >";
@@ -19,8 +20,8 @@ export default function HeroTop() {
           <Typography variant="xl" component="h2" className="job">
             DEVELOPPEUR <br></br> WEB
           </Typography>
-
-          <div className="cta">
+          <SocialNetwork variant="dark" showTitle={false} className="cta" />
+          {/* <div className="cta">
             <div className="cta-border">
               <div className="cta-effect"></div>
               <Button
@@ -30,7 +31,7 @@ export default function HeroTop() {
                 Voir mes projets
               </Button>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="circle"></div>
       </Container>
