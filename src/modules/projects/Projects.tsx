@@ -2,10 +2,11 @@ import React from "react";
 import "./style.scss";
 import Container from "@/components/container/Container";
 import Slider from "@/components/slider/Slider";
-import { getData } from "@/api/api";
+import { getData} from "@/api/api";
 
 export  default async function Projects() {
     const projects = await getData()
+  
 
   return (
     <section className="projects" id="projects">
