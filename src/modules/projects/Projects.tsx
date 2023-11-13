@@ -2,10 +2,11 @@ import React from "react";
 import "./style.scss";
 import Container from "@/components/container/Container";
 import Slider from "@/components/slider/Slider";
-import { getData} from "@/api/api";
+import { getAllProjects} from "@/api/api";
 
 export  default async function Projects() {
-    const projects = await getData()
+  
+    const projects = await getAllProjects()
   
 
   return (
@@ -13,7 +14,7 @@ export  default async function Projects() {
       <div className="separate"></div>
       <div className="triangle"></div>
       <Container className="container">
-        <Slider itemList={projects}/>
+        <Slider projects={projects}/>
       </Container>
     </section>
   );

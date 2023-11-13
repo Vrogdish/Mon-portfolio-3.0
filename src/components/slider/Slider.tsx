@@ -12,23 +12,23 @@ import "./style.scss";
 
 interface Props {
   className?: string;
-  itemList: Project[];
+  projects: Project[];
 }
 
-export default function Slider({ className, itemList }: Props) {
+export default function Slider({ className, projects }: Props) {
   const [index, setIndex] = useState(0);
 
   const handleChange = (e: any) => {
     setIndex(e.activeIndex);
   };
 
-  const {ref, inView}= useInView({
-    rootMargin : "-50px",
-    triggerOnce : true
-  })
+  const { ref, inView } = useInView({
+    rootMargin: "-50px",
+    triggerOnce: true,
+  });
 
   return (
-    <div  className={`project-preview ${inView && "project-visible"}`} >
+    <div className={`project-preview ${inView && "project-visible"}`}>
       <div className={` slider ${className}`}>
         <div className="navigation">
           <div className={`prev ${index === 0 && "inactive"}`}>
@@ -40,7 +40,7 @@ export default function Slider({ className, itemList }: Props) {
             />
           </div>
           <div
-            className={`next ${index === itemList.length - 1 && "inactive"}`}
+            className={`next ${index === projects.length - 1 && "inactive"}`}
           >
             <Image
               src={"/images/right.png"}
@@ -51,33 +51,39 @@ export default function Slider({ className, itemList }: Props) {
           </div>
         </div>
         <div ref={ref}>
-            <Swiper
-              slidesPerView={1}
-              spaceBetween={10}
-              modules={[Pagination, Navigation]}
-              pagination={{
-                el: ".swiper-pagination",
-                type: "bullets",
-              }}
-              navigation={{
-                prevEl: ".prev",
-                nextEl: ".next",
-              }}
-              onActiveIndexChange={(e) => {
-                handleChange(e);
-              }}
-            >
-              {itemList.map((element, index) => (
-                <SwiperSlide key={index}>
-                  <div className="capture">
-                    <Image src={element.cover} alt={element.title} width={400} height={600}/>
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={10}
+            modules={[Pagination, Navigation]}
+            pagination={{
+              el: ".swiper-pagination",
+              type: "bullets",
+            }}
+            navigation={{
+              prevEl: ".prev",
+              nextEl: ".next",
+            }}
+            onActiveIndexChange={(e) => {
+              handleChange(e);
+            }}
+          >
+            {projects.map((project, index) => (
+              <SwiperSlide key={index}>
+                <div className="capture">
+                  <Image
+                    src={project.cover}
+                    alt={project.title}
+                    width={400}
+                    height={800}
+                    className="capture-img"
+                  />
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
-      <ProjectDescription project={itemList[index]} />
+      <ProjectDescription project={projects[index]} />
     </div>
   );
 }

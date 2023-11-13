@@ -16,15 +16,16 @@
   .capture {
     position: relative;
     width: 400px;
-    height: 600px;
+    height: 500px;
     background-color: white;
-    img {
+    &-img {
       position: absolute;
       top: 0;
       object-fit: cover;
       object-position: top;
       width: 100%;
       height: auto;
+
     }
   }
   .next,
