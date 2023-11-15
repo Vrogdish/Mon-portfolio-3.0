@@ -21,17 +21,6 @@ export default function HeroTop() {
             DEVELOPPEUR <br></br> WEB
           </Typography>
           <SocialNetwork variant="dark" showTitle={false} className="cta" />
-          {/* <div className="cta">
-            <div className="cta-border">
-              <div className="cta-effect"></div>
-              <Button
-                className="cta-btn"
-                onClick={() => scrollToId("projects")}
-              >
-                Voir mes projets
-              </Button>
-            </div>
-          </div> */}
         </div>
         <div className="circle"></div>
       </Container>

@@ -43,7 +43,7 @@ export default function Footer() {
             component="h3"
             className="title"
           >
-            Contacter moi via le formulaire :
+            Contactez moi via le formulaire :
           </Typography>
           <Form />
         </div>

@@ -35,17 +35,7 @@ export default function SocialNetwork({
   variant = "light",
   showTitle = true,
 }: Props) {
-  // let variantStyle = "";
 
-  // switch (variant) {
-  //   case "light":
-  //     variantStyle = "social-light";
-  //     break;
-  //   case "dark":
-  //     variantStyle = "social-dark";
-  //   default:
-  //     break;
-  // }
 
   return (
     <div className={`social ${className} `}>
