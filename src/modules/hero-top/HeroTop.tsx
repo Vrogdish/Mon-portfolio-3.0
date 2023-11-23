@@ -2,9 +2,7 @@
 import React from "react";
 import "./style.scss";
 import Typography from "@/components/typography/Typography";
-import Button from "@/components/button/Button";
 import Container from "@/components/container/Container";
-import { scrollToId } from "@/utils/scrollToId";
 import SocialNetwork from "@/components/social-network/SocialNetwork";
 
 export default function HeroTop() {
