@@ -21,6 +21,13 @@ header {
     display: none;
 }
 
+@media (max-width :1440px) {
+    header {
+        height: 60px;
+    }
+    
+}
+
 @media (max-width : 768px) {
     .desktop-nav {
         display: none;
