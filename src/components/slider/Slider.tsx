@@ -76,6 +76,7 @@ export default function Slider({ className, projects }: Props) {
                     width={400}
                     height={800}
                     className="capture-img"
+                    priority
                   />
                 </div>
               </SwiperSlide>
