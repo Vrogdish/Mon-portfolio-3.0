@@ -36,10 +36,24 @@
 .grey-color {
   color: $text-grey;
 }
+
+@media (max-width : 1440px) {
+  .text-xl {
+    font-size: 72px;
+  }
+
+  .text-lg {
+    font-size: 30px;
+  }
+}
+
+
+
 @media (max-width: 1280px) {
   .text-xl {
     font-size: 50px;
     letter-spacing: 20px;
+    line-height: 100px;
   }
   .text-lg {
     font-size: 30px;
@@ -61,10 +75,10 @@
 
 @media (max-width: 600px) {
     .text-xl {
-      font-size: 20px;
+      font-size: 24px;
       letter-spacing: 10px;
     }
     .text-lg {
-      font-size: 18px;
+      font-size: 12px;
     }
   }

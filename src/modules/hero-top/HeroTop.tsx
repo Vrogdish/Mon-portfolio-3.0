@@ -10,7 +10,7 @@ export default function HeroTop() {
 
   return (
     <section className="hero">
-      <Container className="container">
+      <Container className="hero-container">
         <div className="title">
           <Typography variant="lg" color="grey" component="h1" className="name">
             {name}

@@ -3,20 +3,20 @@
 .hero {
   background-color: $color-light;
 
-  .container {
+  .hero-container {
     position: relative;
-    height: 100vh;
-    padding: 0 30px;
+    min-height: 90vh;
+    // padding: 0 50px;
     overflow-x: hidden;
 
     .title {
       position: relative;
       z-index: 10;
-      margin-top: 180px;
+      margin-top: 20vh;
       animation: title 0.5s ease-in-out both 1.2s;
 
       .name {
-        margin-bottom: 80px;
+        margin-bottom: 100px;
       }
 
       .job {
@@ -26,7 +26,7 @@
 
     .circle {
       position: absolute;
-      top:20%;
+      top:25%;
       right: 40px;
       height: 600px;
       width: 600px;
@@ -104,6 +104,10 @@
     width: 400px;
     height: 400px;
     left: 50%;
+  }
+
+  .hero-container {
+    padding: 0 20px;
   }
 
  .cta {
