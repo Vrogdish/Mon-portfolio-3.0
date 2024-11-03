@@ -26,7 +26,7 @@
 
     .circle {
       position: absolute;
-      top:25%;
+      top: 25%;
       right: 40px;
       height: 600px;
       width: 600px;
@@ -37,11 +37,11 @@
   }
 }
 
-.cta{
+.cta {
   // position: relative;
   width: 300px;
 
-  &-border{
+  &-border {
     width: 300px;
     padding: 3px;
     border-radius: 2rem;
@@ -50,13 +50,12 @@
     align-items: center;
     overflow: hidden;
     position: relative;
-
   }
   &-effect {
     position: absolute;
     width: 300px;
     height: 300px;
-    background-image: linear-gradient(#6366f1,#e11d48);
+    background-image: linear-gradient(#6366f1, #e11d48);
     border-radius: 100%;
     animation: cta ease-in-out 1s infinite;
   }
@@ -65,7 +64,6 @@
     width: 100% !important;
   }
 }
-
 
 @keyframes circle {
   from {
@@ -99,8 +97,10 @@
   }
 }
 
-@media (max-width : 768px) {
-  .hero .container .circle{
+@media (max-width: 768px) {
+
+
+  .hero .container .circle {
     width: 400px;
     height: 400px;
     left: 50%;
@@ -110,9 +110,9 @@
     padding: 0 20px;
   }
 
- .cta {
-  margin: auto;
-  display: flex;
-  justify-content: center;
-}
+  .cta {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
 }

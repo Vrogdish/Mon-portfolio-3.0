@@ -27,7 +27,7 @@ export default function Typography({
   let colorStyle: string = "";
 
   switch (variant) {
-    case "xl": //default
+    case "xl": 
       variantFamily = standardFont.className;
       variantStyle="text-xl"
       break;
