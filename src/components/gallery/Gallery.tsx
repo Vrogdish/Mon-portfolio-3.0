@@ -14,9 +14,6 @@ interface Props {
 }
 
 export default function Gallery({ projects, className }: Props) {
-  
-
-
   return (
     <div className={`gallery ${className}`}>
       {projects.map((project, index) => (
@@ -28,6 +25,14 @@ export default function Gallery({ projects, className }: Props) {
             width={400}
             className="gallery-image"
           />
+          <div className="mobile-btn">
+            <Button
+              theme="dark"
+              onClick={() => window.open(project.url, "_blank")}
+            >
+              Visiter le site
+            </Button>
+          </div>
           <div className="overlay">
             <div className="overlay-content">
               <Typography component="h3" variant="md" color="light">
@@ -37,7 +42,13 @@ export default function Gallery({ projects, className }: Props) {
                 Technologies :
               </Typography>
               {project.tags.map((tag) => (
-                <Typography key={tag} component="p" variant="sm" color="light" className="tags">
+                <Typography
+                  key={tag}
+                  component="p"
+                  variant="sm"
+                  color="light"
+                  className="tags"
+                >
                   - {tag}
                 </Typography>
               ))}

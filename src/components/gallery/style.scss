@@ -6,6 +6,12 @@
   justify-content: center;
   gap: 20px;
   margin: 60px 0;
+  @media (max-width: 900px) {
+    grid-template-columns: 400px;
+  }
+  @media (max-width: 500px) {
+    grid-template-columns: 300px;
+  }
 
   &-item {
     position: relative;
@@ -16,26 +22,28 @@
   &-image {
     object-fit: cover;
     object-position: top;
+    width: 100%;
+    height: 100%;
   }
 
   .overlay {
+    display: flex;
     position: absolute;
     background-color: $color-dark;
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
-
     padding: 20px;
     top: 0;
     width: 100%;
     height: 100%;
     opacity: 0;
     transition: 0.5s;
+    pointer-events: none;
     h3 {
-      margin-bottom: 40px;
+      margin-bottom: 20px;
     }
     .tags {
-        margin: 10px 0;
+      margin: 10px 0;
     }
     &-links {
       display: flex;
@@ -43,9 +51,24 @@
       align-items: center;
       gap: 10px;
     }
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 }
 
 .gallery-item:hover .overlay {
   opacity: 1;
+  pointer-events: auto;
+}
+
+.mobile-btn {
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    transform: translateX(-50%);
+    left: 50%;
+  }
 }
