@@ -55,12 +55,12 @@ export default function Form({ className }: Props) {
       <Typography variant="caption" color="light" component="div">
         <div className="name">
           <div className="form-input">
-            <label htmlFor="firstname">Prénom :</label>
+            {/* <label htmlFor="firstname">Prénom :</label> */}
             <input
               className=""
               id="firstname"
               type="text"
-              placeholder="John"
+              placeholder="Prénom"
               {...register("firstName", {
                 required: "Champs obligatoire",
                 maxLength: 80,
@@ -82,12 +82,12 @@ export default function Form({ className }: Props) {
             </div>
           </div>
           <div className="form-input">
-            <label htmlFor="lastname">Nom :</label>
+            {/* <label htmlFor="lastname">Nom :</label> */}
             <input
               className=""
               id="lastname"
               type="text"
-              placeholder="Doe"
+              placeholder="Nom"
               {...register("lastName", {
                 required: "Champs obligatoire",
 
@@ -111,12 +111,12 @@ export default function Form({ className }: Props) {
           </div>
         </div>
         <div className="form-input">
-          <label htmlFor="email">Adresse email :</label>
+          {/* <label htmlFor="email">Adresse email :</label> */}
           <input
             className=""
             id="email"
             type="text"
-            placeholder="JohnDoe@exemple.com"
+            placeholder="Adresse email"
             {...register("email", {
               required: "Champs obligatoire",
               pattern: {
@@ -141,7 +141,7 @@ export default function Form({ className }: Props) {
           </div>
         </div>
         <div className="form-input">
-          <label htmlFor="message">Message :</label>
+          {/* <label htmlFor="message">Message :</label> */}
           <textarea
             className=""
             id="message"

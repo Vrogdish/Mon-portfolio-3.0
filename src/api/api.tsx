@@ -24,10 +24,13 @@ export const getAllProjects = async () => {
       tags: elem.tags,
       title: elem.title,
       url: elem.url,
+      rank: elem.rank,
     };
     projects.push(project);
   });
 
-  return projects;
+  projects.sort((a, b) => b.rank - a.rank);
+
+  return projects.slice(0, 4);
 };
 

@@ -1,4 +1,4 @@
-
+@import '../styles/variables.scss';
 * {
     margin: 0;
     padding: 0;
@@ -14,5 +14,10 @@ a {
 main {
     overflow-x: hidden;
     margin: auto;
+}
+
+
+body {
+    background-color: $color-light;
 }
 

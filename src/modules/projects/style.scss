@@ -1,6 +1,7 @@
 @import "/src/styles/variables.scss";
 
 .projects {
+    background-color: $color-light;
  
     .separate{
         width: 100%;
@@ -32,3 +33,4 @@
         padding: 40px 20px 100px 20px;
     }
 }
+
