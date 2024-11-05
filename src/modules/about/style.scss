@@ -1,24 +1,20 @@
 @import "/src/styles/variables.scss";
 
 .about {
-  background:linear-gradient($color-light, white);
+  background: linear-gradient($color-light, white);
   padding-top: 100px;
 
-
-  .separate{
+  .separate {
     height: 2px;
     width: 1200px;
     margin: auto;
     background-color: $color-dark;
     transform: scale(0);
     transition: all ease-in-out 0.5s;
-
-    
-  } 
+  }
   .separate_visible {
     transform: scale(1);
   }
-
 
   .container {
     display: flex;
@@ -27,11 +23,9 @@
     opacity: 0;
     transition: all ease-in-out 0.5s;
 
-
-
     .description {
       max-width: 600px;
-      .content{
+      .content {
         margin-bottom: 30px;
       }
     }
@@ -58,7 +52,6 @@
           width: 100%;
         }
       }
-
     }
     .skills {
       max-width: 500px;
@@ -126,21 +119,19 @@
   }
 }
 
-
-@media (max-width : 1200px) {
+@media (max-width: 1200px) {
   .about .container {
     flex-direction: column;
     align-items: center;
-    gap:80px;
+    gap: 80px;
     padding-top: 30px;
-      & .skills {
-        & span:nth-child(5){
-          grid-column: 1/6;
-        }
-        & span:nth-child(6) {
-          grid-column: 2/4;
-
-        }
+    & .skills {
+      & span:nth-child(5) {
+        grid-column: 1/6;
       }
+      & span:nth-child(6) {
+        grid-column: 2/4;
+      }
+    }
   }
 }

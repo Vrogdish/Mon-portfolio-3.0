@@ -7,4 +7,5 @@ export interface Project {
     tags : string[]
     title : string
     url : string
+    rank : number
 }
