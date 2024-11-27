@@ -106,7 +106,13 @@
     opacity: 1;
     transition-delay: 0.2s;
   }
+  
 }
+
+.cv-btn {
+  margin: 40px auto;
+}
+
 @keyframes pulse {
   from {
     transform: scale(1);

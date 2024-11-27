@@ -25,14 +25,7 @@ export default function Gallery({ projects, className }: Props) {
             width={400}
             className="gallery-image"
           />
-          <div className="mobile-btn">
-            <Button
-              theme="dark"
-              onClick={() => window.open(project.url, "_blank")}
-            >
-              Visiter le site
-            </Button>
-          </div>
+          
           <div className="overlay">
             <div className="overlay-content">
               <Typography component="h3" variant="md" color="light">
@@ -57,6 +50,7 @@ export default function Gallery({ projects, className }: Props) {
               {project.github ? (
                 <Button
                   theme="light"
+                  size="sm"
                   onClick={() => window.open(project.github, "_blank")}
                 >
                   Code source
@@ -66,6 +60,7 @@ export default function Gallery({ projects, className }: Props) {
               {project.url ? (
                 <Button
                   theme="light"
+                  size="sm"
                   onClick={() => window.open(project.url, "_blank")}
                 >
                   Visiter le site
@@ -73,7 +68,29 @@ export default function Gallery({ projects, className }: Props) {
               ) : null}
             </div>
           </div>
+          <div className="mobile-btn">
+          {project.github ? (
+                <Button
+                  theme="light"
+                  size="sm"
+                  onClick={() => window.open(project.github, "_blank")}
+                >
+                  Code source
+                </Button>
+              ) : null}
+
+              {project.url ? (
+                <Button
+                  theme="light"
+                  size="sm"
+                  onClick={() => window.open(project.url, "_blank")}
+                >
+                  Visiter le site
+                </Button>
+              ) : null}
+          </div>
         </div>
+        
       ))}
     </div>
   );

@@ -35,14 +35,13 @@ export default function SocialNetwork({
   variant = "light",
   showTitle = true,
 }: Props) {
-
-
   return (
     <div className={`social ${className} `}>
       {navlinks.map((element, index) => (
         <div key={index}>
           <a href={element.url} target="_blank" className="icons">
             <Image
+              className="pictures"
               src={variant === "light" ? element.image : element.imageDark}
               alt={`icone ${element.title}`}
               width={50}

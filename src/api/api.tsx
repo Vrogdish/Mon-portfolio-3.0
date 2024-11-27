@@ -6,8 +6,10 @@ import {
   getFirestore,
 
 } from "firebase/firestore";
+import { getDownloadURL, getStorage, ref } from "firebase/storage";
 
 const db = getFirestore(app);
+const storage = getStorage(app);
 
 export const getAllProjects = async () => {
   const querySnapshot = await getDocs(collection(db, "projects"));
@@ -32,5 +34,11 @@ export const getAllProjects = async () => {
   projects.sort((a, b) => b.rank - a.rank);
 
   return projects.slice(0, 4);
+};
+
+export const getCvUrl = async () => {
+  const cvRef = ref(storage, "cv/CV_Gache_Cédric_Développeur_2024-11.pdf");
+  const url = await getDownloadURL(cvRef);
+  return url;
 };
 

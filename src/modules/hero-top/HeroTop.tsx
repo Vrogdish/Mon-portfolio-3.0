@@ -18,7 +18,7 @@ export default function HeroTop() {
           <Typography variant="xl" component="h2" className="job">
             DEVELOPPEUR <br></br> WEB
           </Typography>
-          <SocialNetwork variant="dark" showTitle={false} className="cta" />
+          <SocialNetwork variant="dark" showTitle={true} className="cta" />
         </div>
         <div className="circle"></div>
       </Container>

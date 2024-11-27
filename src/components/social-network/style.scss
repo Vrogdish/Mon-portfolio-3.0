@@ -11,5 +11,21 @@
         align-items: center;
         text-decoration: none;
         padding: 20px 0;
+        &:hover .pictures {
+            animation: jump 0.8s infinite ease-out ;
+        }
+        
+    }
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    70% {
+        transform: translateY(0);
     }
 }
